@@ -1,0 +1,34 @@
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}/*
+.mails { 
+	border-spacing: 0;
+}*/
+.mails thead {
+	font-weight: bold;
+	color: #444;
+	text-shadow: #F7F7F7 0 1px 1px;
+}
+.mails th {
+    /*border-left: 1px solid #DDD;
+    border-right: 1px solid #888;*/
+    padding: 0.4em 0 0.3em 0.7em;
+}
+.mails th:nth-child(1), .mails td:nth-child(1) {
+    width: 50%;
+}
+.mails th:nth-child(2), .mails td:nth-child(2) {
+    width: 15%;
+}
+.mails th:nth-child(3), .mails td:nth-child(3) {
+    width: 15%;
+}
+.mails th:nth-child(4), .mails td:nth-child(4) {
+    width: 15%;
+}
+.mails th:nth-child(5), .mails td:nth-child(5) {
+    width: 5%;
+}

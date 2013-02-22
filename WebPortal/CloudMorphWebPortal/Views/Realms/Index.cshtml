@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "CloudMorph: Realms";
+}
+
+@section Scripts { 
+<script type="text/javascript">
+
+    function initialize() {
+
+        // Toggle main menu selection
+        $("#mnuMain li.active").toggleClass("active");
+        $("#mnuRealms").toggleClass("active");
+
+        var Realm = function (id, name, uri) {
+            this.id = id;
+            this.name = name;
+        }
+
+        var viewModel = {
+            realms: [
+                new Realm("local", "local"),
+                new Realm("aws", "Amazon AWS"),
+                new Realm("azure", "Azure")
+            ]
+        };
+
+        ko.applyBindings(viewModel);
+
+        function AppViewModel() {
+            this.firstName = "Bert";
+            this.lastName = "Bertington";
+        }
+
+        //ko.applyBindings(new AppViewModel());
+    }
+
+    $(function () {
+        initialize();
+    }); 
+</script>
+} 
+
+
+<h2>Realms</h2>
+<!--
+<p>First name: <strong data-bind="text: firstName">todo</strong></p>
+<p>Last name: <strong data-bind="text: lastName">todo</strong></p>
+-->
+<ul data-bind="foreach: realms">
+    <li>
+        <div>
+            <span data-bind="text: name"></span>
+        </div>
+        <ul>
+            <li><a data-bind='attr: { href: "~/realm/" + id + "/packages" }'>Packages</a></li>
+        </ul>
+    </li>
+</ul>

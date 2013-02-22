@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Windows Azure Guestbook</title>
+    <link href="main.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <form id="form1" action="/" enctype="multipart/form-data" method="POST">
+        <div class="general">
+            <div class="title">
+                <h1>
+                    Windows Azure GuestBook
+                </h1>
+            </div>
+            <div class="inputSection">
+                <dl>
+                    <dt><label for="userName">Name:</label></dt>
+                    <dd><input name="userName" class="field"/></dd>
+                    <dt><label for="message">Message:</label></dt>
+                    <dd><textarea name="message" class="field"></textarea></dd>
+                    <dt><label for="FileUpload1">Photo:</label></dt>
+                    <dd><input type="file" id="FileUpload1" name="datafile" size="16"></dd>
+                </dl>
+                <div class="inputSignSection">
+                    <img id="SignButton" src="./sign.png" alt="Sign GuestBook"/>
+                </div>
+                <input type="submit" />
+            </div>
+        </div>
+    </form>
+
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

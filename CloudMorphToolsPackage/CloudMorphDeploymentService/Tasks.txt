@@ -1,0 +1,2 @@
+﻿1. Integrate Quartz - https://github.com/haf/QuartzTopshelfSample/blob/master/src/ConsoleApplication1/Program.cs
+2. Configure TopShelf service restart options - https://github.com/Topshelf/Topshelf/blob/master/src/Topshelf/OS/Windows/WindowsServiceControlManager.cs#L79
